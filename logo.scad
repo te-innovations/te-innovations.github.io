@@ -2,8 +2,15 @@ use <OpenSCAD_lib/simpletext.scad>;
 
 h = 5;						// letter height
 b = 2;						// emboss height
-fg = "firebrick";				// foreground colour
-blocks = "lightslategray";	// block colour
+
+orange = [242/255, 131/255, 32/255];
+darkgreen = [15/255, 58/255, 45/255];
+red = "firebrick";
+grey = "lightslategray";
+yellow = "gold";
+
+fg = orange;					// foreground colour
+blocks = grey;				// block colour
 bg = "gold";					// background colour
 
 if (0)
