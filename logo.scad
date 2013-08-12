@@ -10,10 +10,10 @@ grey = "lightslategray";
 yellow = "gold";
 
 fg = orange;					// foreground colour
-blocks = grey;				// block colour
-bg = "gold";					// background colour
+blocks = darkgreen;			// block colour
+bg = "grey";					// background colour
 
-if (0)
+if (1)
 {	
 	//translate([0, 20, 0])
 	logo();
