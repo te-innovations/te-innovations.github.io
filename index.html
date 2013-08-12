@@ -20,18 +20,18 @@
 		h1 {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 300; margin-bottom: 20px; line-height: 130%; color: #f28320; text-shadow: none;}
 		#about a { color: #f28320; font-weight: bold; text-decoration: none; border-bottom: 0px solid rgb(15, 58, 45); }
 		#about a:hover { text-decoration: none; color: #888; border-bottom: 1px solid rgb(15, 58, 45); text-shadow: none; }
-		#logo { width: 128px; margin: 0; position: fixed; right: 30px; top: 5px;}
+		#logo { width: 128px; margin: 0; position: fixed; right: 80px; top: 30px;}
 		#about { width: 400px; padding: 50px 0 0 30px; margin: 0 auto 0 50px !important;}
-		ul#connect{white-space:nowrap;width: 400px; padding: 10px 0 0 20px; margin: 0 auto 0 50px !important;}
+		ul#connect{white-space:nowrap;width: 240px; padding: 10px 0 0 20px; margin: 0 auto 0 50px !important;}
 		#connect li{display:inline;list-style-type:none;}
 		#connect a{text-decoration: none;padding:3px 5px;border-style: none;}
 		#connect a:link,#navlist a:visited{text-decoration: none;opacity:0.2;border-style: none;}
 		#connect a:hover{text-decoration: none;opacity:0.4;border-style: none;}
 		#connect img {border:none;}
 		@media (max-width: 767px) {
-			#logo { position: relative; width: auto; padding: 20px; margin: 0; }
-			#about { position: relative; width: auto; padding: 20px; margin: 0 !important; }
-			background-image { opacity: 0.2; }
+			#logo	{ width: 128px; padding: 0px; margin: 0px; position: fixed; right: 30px; top: 0px;}
+			#about	{ width: 400px; padding: 0px; margin: 0px; position: fixed; top: 80px; !important; }
+			ul#connect{white-space:nowrap;width: 300px; padding: 20px 0 0 0px; margin: 0 auto 0 50px !important;}
 		}
 		span{color:#333;}
 	</style>
@@ -60,14 +60,7 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script type="text/javascript" src="jquery.backstretch.min.js"></script>
 	<script type="text/javascript">
-	$(function(){
-	     $(window).resize(function(){
-	         if($(this).width() >= 767){
-		   $.backstretch("TEi_bg.png", {speed: 150});
-	         }
-	      })
-	      .resize();//trigger resize on page load
-	});
+		$.backstretch("TEi_bg.png", {speed: 150});
 	</script>
 
 </body></html>
