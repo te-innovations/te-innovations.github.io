@@ -1,5 +1,6 @@
-<!doctype html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title>TE innovations</title>
@@ -14,53 +15,53 @@
 	<![endif]-->	
 	<style>
 		* { padding: 0; margin: 0; }
-		body { background-color: #333; }
-		//p { color: #fff; font-family: Helvetica; font-size: 16px; line-height: 24px; margin-bottom: 22px; -webkit-font-smoothing: antialiased; }
-		p { color: #fff; font-family: Helvetica; font-size: 80%; line-height: 20px; margin-bottom: 15px; -webkit-font-smoothing: antialiased; }
-		a { color: #fff; font-weight: bold; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); }
-		a:hover { color: #990000; border-bottom: 1px solid rgba(255,255,255,1); }
-		#monogram { width: 50px; padding: 50px 0 0 0; margin: 0 auto 0 50px; }
-		#about { width: 360px; padding: 0 0 0 150px; margin: -35px 50px 0 auto !important; }
-		@media (max-width: 767px) {
-			#monogram { position: relative; width: auto; padding: 20px; margin: 0; }
-			#about { position: relative; width: auto; padding: 20px; margin: 0 !important; }
-			background-image { opacity: 0.2; }
-		}
-		h1 {font-family: "Impact", Helvetica, Arial, sans-serif; font-weight: 300; margin-bottom: 20px; line-height: 130%; color: #f28320; text-shadow: none;}
+		p { color: #0f3a2d; font-family: Helvetica; font-size: 80%; line-height: 20px; margin-bottom: 15px; -webkit-font-smoothing: antialiased; }
+		#about a { color: #f28320; font-weight: bold; text-decoration: none; border-bottom: 0px solid rgb(15, 58, 45); }
+		#about a:hover { text-decoration: none; color: #888; border-bottom: 1px solid rgb(15, 58, 45); text-shadow: none; }
+		#logo { width: 128px; margin: 0; position: fixed; right: 50px; top: 50px;}
+		#about { width: 400px; padding: 50px 0 0 30px; margin: 0 auto 0 50px !important;}
+		h1 {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 300; margin-bottom: 20px; line-height: 130%; color: #f28320; text-shadow: none;}
+		ul#connect{white-space:nowrap;width: 400px; padding: 10px 0 0 20px; margin: 0 auto 0 50px !important;}
+		#connect li{display:inline;list-style-type:none;}
+		#connect a{text-decoration: none;padding:3px 5px;border-style: none;}
+		#connect a:link,#navlist a:visited{text-decoration: none;opacity:0.2;border-style: none;}
+		#connect a:hover{text-decoration: none;opacity:0.4;border-style: none;}
+		#connect img {border:none;}
+		span{color:#333;}
 	</style>
 </head>	
     
 <body>
+	<div id="logo">
+		<img src="monogram.png" />
+	</div>
+	
+	<div id="about">
+		<h1>TE innovations</h1>
+		<p>We are just a couple of friends who share an enthusiasm for designing and creating stuff.</p>
+		<p>The advent of affordable 3D printing technology has made rapid prototyping and short-run manufacturing achievable by the hobbyist on a budget.</p>
+		<p>Our inexpensive desktop replicators can turn ideas into physical objects, so all those great inventions you thought of are now only hours away from being solid, tangible objects that you can hold in your hands.</p>
+		<p>For more information or if you fancy an informal chat, please contact <a href=mailto:terry@te-innovations.co.uk>Terry</a> or <a href=mailto:eric@te-innovations.co.uk>Eric</a> - we also offer design and prototyping consultancy services so please drop us an email if you'd like to discuss what we can do for your project.</p>
+	</div>
+	<ul id="connect">
+		<li><a href="http://twitter.com/"><img src="twitter.png"></a></li>
+		<li><a href="http://www.flickr.com/"><img src="flickr.png"></a></li>
+		<li><a href="http://www.facebook.com/"><img src="facebook.png"></a></li>
+	</ul>
 
-<!-- swap out for a logo -->
-<div id="monogram">
-	<img src="monogram.png" />
-</div>
 
-<!-- swap out for information about yourself -->
-<div id="about">
-	<h1>TE innovations</h1>
-	<p>We are just a couple of friends who share an enthusiasm for designing and creating stuff.</p>
-	<p>The advent of affordable 3D printing technology has made rapid prototyping and short-run manufacturing achievable by the hobbyist on a budget.</p>
-	<p>Our inexpensive desktop replicators can turn ideas into physical objects, so all those great inventions you thought of are now only hours away from being solid, tangible objects that you can hold in your hands.</p>
-	<p>For more information or if you fancy an informal chat, please contact <a href=mailto:terry@te-innovations.co.uk>Terry</a> or <a href=mailto:eric@te-innovations.co.uk>Eric</a> - we also offer design and prototyping consultancy services so please drop us an email if you'd like to discuss what we can do for your project.</p>
-	<p></p>
-	<p></p>
-</div>
+	<!--include jquery & backstretch-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.backstretch.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+	     $(window).resize(function(){
+	         if($(this).width() >= 767){
+		   $.backstretch("TEi_bg.png", {speed: 150});
+	         }
+	      })
+	      .resize();//trigger resize on page load
+	});
+	</script>
 
-<!--include jquery & backstretch-->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="jquery.backstretch.min.js"></script>
-<script type="text/javascript">
-$(function(){
-     $(window).resize(function(){
-         if($(this).width() >= 767){
-             $.backstretch("TEi_bg.png", {speed: 150});
-         }
-      })
-      .resize();//trigger resize on page load
-});
-</script>
-
-</body>	
-</html>
+</body></html>
